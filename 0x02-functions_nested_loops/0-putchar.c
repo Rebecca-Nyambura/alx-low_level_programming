@@ -2,18 +2,16 @@
 
 /**
  * main - prints _putchar
- * followed by a new line
  * Return: Always 0
  */
-int main (void)
+int main(void)
 {
-	char c[] = "_putchar";
+	char *_putchar = "_putchar";
 
-	int i;
-
-	for(i = 0; i < 8; i++)
+	while (*_putchar)
 	{
-		_putchar(c[i]);
+		_putchar(*_putchar);
+		_putchar++;
 	}
 	_putchar('\n');
 	return (0);
