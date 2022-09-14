@@ -1,16 +1,17 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * main - prints _putchar
- * Return: always 0
+ * main - Prints a character using _putchar
  *
+ * Return: 0 - Success
  */
+
 int main(void)
 {
-	char c[] = "_putchar\n";
+	char c[] = "Holberton\n";
 	int i;
 
-	for (i = 0; i <= 8; i++)
+	for (i = 0; i <= 9; i++)
 		_putchar(c[i]);
 	return (0);
 }
