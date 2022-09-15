@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - prints the alphabet followed by a new line use _putchar twice
+ * print_alphabet - prints alphabet
  * Return: Always 0;
  */
 void print_alphabet(void)
@@ -14,3 +14,4 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
+
