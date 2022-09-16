@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_numbers - Print numbers from 0 to 9
+ * print_numbers - Print numbers between 0 to 9 incl.
  *
- * Return: void;
+ * Return: void.
  */
 void print_numbers(void)
 {
