@@ -5,7 +5,7 @@
  * @str: the string to capitalize
  * Return: capitalized string
  */
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 	int index = 0;
 
@@ -29,6 +29,7 @@ char *cap_string(char *)
 				str[index - 1] == '}' ||
 				index == 0)
 			str[index] -= 32;
+
 
 		index++;
 	}
