@@ -1,4 +1,3 @@
-#include "main.h"
 #include "stdio.h"
 
 /**
@@ -7,12 +6,13 @@
  * @argv: array of pointers to the arguments 
  * Return: 0
  */
+
 int main(int argc, char *argv[])
 {
-	int arg;
+	int i;
 
-	for (arg = 0; arg < argc; arg++)
-		printf("%s\n", argv[arg]);
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
 
 	return (0);
 }
