@@ -1,14 +1,15 @@
 #include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
  * op_add - Returns the sum of two numbers
- * @a:the first number
- * @b:the second number
+ * @a: first number
+ * @b: second number
  * Return: sum of a and b
  */
+
 int op_add(int a, int b)
+
 {
 	return (a + b);
 }
