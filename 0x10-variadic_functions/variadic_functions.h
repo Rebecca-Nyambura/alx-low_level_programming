@@ -1,14 +1,25 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 
-#include <stdarg.h>
 #include <stdio.h>
-
-typedef struct printer{
-	char *symbol;
-	void (*print)(va_list arg);
-} printer_t;
+#include <stdarg.h>
 
 int sum_them_all(const unsigned int n, ...);
+
+/**
+ * struct p - checker struct
+ * @p: possibility
+ * @f: Function to be used
+ */
+typedef struct p
+{
+	char *p;
+	void (*f)(va_list);
+} checker;
+
+void print_c(va_list);
+void print_i(va_list);
+void print_f(va_list);
+void print_s(va_list);
 
 #endif
