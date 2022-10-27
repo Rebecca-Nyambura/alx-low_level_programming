@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * print_listint - function that prints all the elements of a listint_t list
+ * print_listint - prints all elements of a listint_t list
  * @h: A pointer to the head of the list_t list.
  * Return: number of nodes
  */
