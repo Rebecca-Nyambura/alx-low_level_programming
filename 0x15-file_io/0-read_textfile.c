@@ -3,11 +3,10 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - reads text file and prints it to standard output
- * @filename: name of file to be read
+ * read_textfile - reads a text file and prints it to the standard output
+ * @filename: name of the file to be read
  * @letters: number of letters to read and print
- * Return: actual number of letters read and printed
- * 0 if filename cannot be opened or read or if filename is NULL
+ * Return: the number of letters printed, or 0 if it failed
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -18,9 +17,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd < 0)
-		return (0);
-	buf = malloc(sizeof(char) * letters);
-	if (!buf)
 		return (0);
 	i = read(fd, buf, letters);
 	if (i < 0)
